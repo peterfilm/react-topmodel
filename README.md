@@ -18,8 +18,4 @@ __Компоненты галерии, отзывов, карточек моде
 
 Всего было сделано 8 роутов в Django для получения нужных данных. В админ-панеле добавил дополнительные возможности для поиска, сортировки и редактированию страничек.
 
-> Логин и пароль в Django Admin:  
-__login:__ admin  
-__password:__ zaqzaq123456  
-
 В этом сайте я отработал новые для себя технологии: Redux Toolkit, TypeScript, роутинг через createBrowserRouter, Django DRF, библиотеки axios, classnames, React Awesome Reveal, React Intersection Observer, а так же саму связку React + Django + Redux Toolkit.
