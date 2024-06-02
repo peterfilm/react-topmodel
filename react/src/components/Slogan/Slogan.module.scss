@@ -1,0 +1,132 @@
+.slogan {
+    height: 800px;
+    background-color: #b48787;
+    display: flex;
+    justify-content: space-between;
+}
+
+.girl {
+    height: 100%;
+    width: auto;
+}
+
+.texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+
+    &__main {
+        padding: 30px 60px;
+        font-size: 47px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--white);
+        text-transform: uppercase;
+
+    }
+
+    &__secondary {
+        padding: 30px 60px;
+        font-size: 29px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color:var(--white);
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slogan {
+        height: 500px;
+    }
+    .texts {
+        &__main {
+            font-size: 35px;
+        }
+        &__secondary {
+            font-size: 24px;
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+    .slogan {
+        height: 400px;
+    }
+    .texts {
+        &__main {
+            font-size: 30px;
+        }
+        &__secondary {
+            font-size: 20px;
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .slogan {
+        height: 400px;
+    }
+    .texts {
+        padding: 20px;
+        &__main {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+        &__secondary {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .slogan {
+        height: 200px;
+    }
+    .texts {
+        padding: 20px;
+        &__main {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+        &__secondary {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+
+}
+
+@media (max-width: 425px) {
+    .slogan {
+        height: auto;
+        min-height: 300px;
+    }
+    .texts {
+        padding: 20px;
+        &__main {
+            font-size: 22px;
+            padding: 10px 20px;
+        }
+        &__secondary {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+    }
+
+}

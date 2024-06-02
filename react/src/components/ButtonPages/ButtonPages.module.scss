@@ -1,0 +1,30 @@
+.next, .prev {
+    background: var(--secondary);
+    color: var(--main);
+    border: 2px solid var(--main);
+    border-radius: 5%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.link {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: 2px solid var(--main);
+    background-color: var(--secondary);
+    cursor: pointer;
+    color: var(--darker);
+}
+
+.active {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    border: var(--main);
+    border: 2px solid var(--secondary);
+    background-color: var(--main);
+    font-weight: 800;
+    color: var(--secondary);
+}

@@ -1,0 +1,184 @@
+.bookModel {
+    position: fixed;
+    background: rgba(29, 29, 29, 0.95);
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    padding: 50px;
+
+    &__container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+}
+
+.close {
+    color: var(--main);
+    font-size: 30px;
+    padding-top: 10px;
+    width:30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        color: var(--main)
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+}
+
+.popup {
+    position: relative;
+    width: 480px;
+    min-height: 600px;
+    height: 600px;
+    background-color: var(--white);
+    padding: 5px 20px 20px;
+    box-shadow: 10px 14px 33px -6px rgba(0,0,0,0.34);
+    overflow-y:hidden;
+
+    &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+       }
+     
+       &::-webkit-scrollbar-thumb {
+        background-color: var(--main);
+        border-radius: 3px;
+     
+        &:hover {
+         background: var(--main)
+        }
+       }
+}
+
+.ava {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.field {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    width: 90%
+}
+
+.pre_text {
+    width: 400px;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+.errorMessage {
+    margin-top: 5px;
+    color: #7e0a0a;
+    font-size: 14px;
+}
+
+.wellSent {
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serverError {
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px solid #7e0a0a;
+    color:#fff;
+    background-color: #d65e5e;
+    text-align: center;
+
+}
+
+.wrapperSent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sentImg {
+    width: 150px;
+}
+
+.sentText {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+
+.sentMessage {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .bookModel {
+        margin: 0 auto;
+        padding: 0;
+        &__container {
+            width: 100%;
+        }
+    }
+    .popup {
+        padding-top: 30px;
+        width: 100%;
+        min-height: 100%;
+        height: 600px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .pre_text {
+        width: 100%;
+    }
+}

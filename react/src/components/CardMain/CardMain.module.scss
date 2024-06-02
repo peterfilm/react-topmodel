@@ -1,0 +1,112 @@
+.card {
+    width: 258px;
+    height: 258px;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden; 
+    cursor: pointer;
+    img {
+        height: 100%;
+        transition: 0.5s all;
+    }
+
+    &-text {
+        z-index: 2;
+        padding: 15px 20px 15px 20px;
+        width: 258px;
+        position: absolute;
+        height: 270px;
+        background-color: rgba(0,0,0, 0.6);
+        top: 260px;
+        transition: top 0.3s ease;
+    }
+
+}
+
+.hr {
+    margin: 0 0 10px 0;
+    border: 1px solid white;
+    opacity: 0.5;
+}
+.name {
+  font-size: 29px;
+  font-weight: 300;
+  color: var(--white)
+}
+
+.cardlist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &-item {
+        color: var(--white);
+        font-size: 13px;
+    }
+}
+
+.insta {
+    padding-top: 10px;
+    width: 100%;
+    transition: 0.3s all;
+
+    &-count {
+        font-size: 16.5px;
+        font-weight: 300;
+        color: var(--white);
+        padding-left: 5px;
+    }
+
+    &-icon {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 590px) {
+    .card {
+        width: 180px;
+        height: 180px;
+        &-text {
+            width: 180px;
+            height: 180px;
+        }
+    }
+
+    .name {
+        font-size: 20px;
+        font-weight: 300;
+        color: var(--white)
+      }
+
+    .cardlist {
+        &-item {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 258px;
+        height: 258px;
+        &-text {
+            width: 258px;
+            height: 270px;
+        }
+    }
+
+    .name {
+        font-size: 29px;
+        font-weight: 300;
+        color: var(--white)
+      }
+
+      .cardlist {
+        &-item {
+            font-size: 13px;
+        }
+    }
+}

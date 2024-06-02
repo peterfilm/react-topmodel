@@ -1,0 +1,128 @@
+.portfolio {
+    position: fixed;
+    background: rgba(29, 29, 29, 0.95);
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    padding: 50px;
+
+    &__container {
+        padding-top: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        transition: 0.5s all;
+    }
+
+    &__arrow {
+
+        &__left, &__right {
+            color: var(--white);
+            font-size: 70px;
+            position: absolute;
+            opacity: 0.5;
+            cursor: pointer;
+            z-index: 1;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &__left {
+            top: calc(50vh - 100px);
+            left:15px;
+        }
+
+        &__right {
+            top: calc(50vh - 100px);
+            right:15px;
+        }
+    }
+
+    &__pages {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        color: var(--secondary);
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+.close {
+    color: var(--white);
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        color: var(--main)
+    }
+}
+
+.set__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.thumbnails {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s all;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.name {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 32px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+        color: var(--main);
+        font-weight: 900;
+
+    }
+}
+
+.response{
+    height: calc(100vh - 120px);
+}
+
+.forImg {
+    height: calc(100vh - 400px);
+    transition: 0.5s all;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .name {
+        font-size: 20px;
+    }
+    .set__container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}

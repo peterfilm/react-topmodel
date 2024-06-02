@@ -1,0 +1,37 @@
+.wrapper {
+    min-height: calc(100vh - 520px);
+    background-color: var(--secondary);
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.models {
+    width: 100%;
+    object-fit: contain;
+}
+
+.title {
+    padding: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text {
+    padding: 0 20px;
+    width: 80%;
+
+    span {
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 100%;
+    }
+}

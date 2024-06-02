@@ -1,0 +1,47 @@
+.search {
+    height: 113px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--main);
+    justify-content: space-around;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--white);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.sendButton {
+  position: relative;
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .search {
+    height: 150px;
+    padding: 10px;
+  }
+  .name {
+    display: inline-block;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .search {
+    height: 330px;
+  }
+}

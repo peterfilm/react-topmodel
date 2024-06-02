@@ -1,0 +1,22 @@
+.big, .bigError {
+    margin-top: 5px;
+    height: 40px;
+    width: 400px;
+    padding: 0 10px;
+}
+
+.bigError {
+    border: 2px solid #7e0a0a;
+    color:#fff;
+    background-color: #d65e5e;
+    &::placeholder {
+        color: var(--white)
+    }
+}
+
+
+@media (max-width: 425px) {
+    .big, .bigError {
+        width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+.small {
+    width: 170px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+    color: var(--darker);
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+@media (max-width: 1440px) {
+    .small {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .small {
+        width: 125px;
+    }
+}
+
+@media (max-width: 992px) {
+    .small {
+        width: 30%;
+    }
+}
+
+@media (max-width: 420px) {
+    .small {
+        width: 100%;
+    }
+}

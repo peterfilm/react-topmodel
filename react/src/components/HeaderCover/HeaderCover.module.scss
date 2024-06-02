@@ -1,0 +1,146 @@
+.cover {
+    min-height: 695px;
+    padding: 50px 100px;
+    display: flex;
+}
+
+.left {
+    height: 600px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.right {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 123px;
+    padding-top: 18px;
+}
+
+.slogan {
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    width: 363px;
+    font-size: 30.5px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.start_booking {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-start;
+    padding-left: 153px;
+    padding-bottom: 39px;
+}
+
+.booking_button {
+    width: 270px;
+    height: 75px;
+    border-radius: 10px;
+    border: solid 2px var(--white);
+    background-color: var(--white);
+    background: none;
+    font-size: 25.5px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 1200px) {
+    .cover {
+        padding: 50px 50px;
+    }
+    .right {
+        padding-right: 50px;
+    }
+    .start_booking {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .left {
+        height: 400px;
+    }
+    .cover {
+        min-height: 400px;
+    }
+    .slogan {
+        height: 150px;
+        font-size: 28px;
+    }
+    .right {
+        padding-right: 20px;
+    }
+    .start_booking {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        height: 150px;
+        font-size: 24px;
+    }
+    .left {
+        height: 350px;
+    }
+    .cover {
+        min-height: 350px;
+    }
+    .start_booking {
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+
+    .right {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cover {
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+    .left {
+        height: 130px;
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+    }
+    .slogan {
+        width: 250px;
+    }
+}
+
+@media (max-width: 420px) {
+    .slogan {
+        width: 100%;
+    }
+
+    .start_booking {
+        padding-bottom: 50px;
+        padding-left: 0;
+        width: auto;
+    }
+    .left {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 320px) {
+}

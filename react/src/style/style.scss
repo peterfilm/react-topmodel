@@ -1,0 +1,31 @@
+@import '_reboot.min';
+@import '_general';
+
+$bg: #2f2f2f;
+
+body {
+    font-family: var(--family);
+    font-weight: var(--fw-light);
+    background-color: #000000;
+}
+
+.error {
+    padding-top: 30px;
+    min-height: calc(100vh - 520px);
+    background-color: var(--secondary);
+}
+
+.container {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+
+@import './media';

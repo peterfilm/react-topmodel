@@ -1,0 +1,21 @@
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.active {
+    width: 32px;
+    height: 33px;
+    margin: 5px;
+    border: var(--main);
+    border: 2px solid var(--secondary);
+    background-color: var(--main);
+    font-weight: 800;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

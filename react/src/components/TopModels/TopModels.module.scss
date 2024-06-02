@@ -1,0 +1,28 @@
+.topmodels {
+    padding: 37px 24px 30px;
+    min-height: 250px;
+    background: var(--secondary);
+    position: relative;
+}
+
+.card_table {
+    padding-top: 50px;
+    display: grid;
+    gap: 26px 7px;
+    grid-template-columns: repeat(auto-fill, minmax(258px, 1fr)); 
+    justify-content: center;
+    justify-items: center;
+}
+
+
+@media (max-width: 590px) {
+    .card_table {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 425px) {
+    .card_table {
+        grid-template-columns: repeat(auto-fill, 1fr);
+    }
+}

@@ -1,0 +1,45 @@
+.brands {
+    min-height: 310px;
+    background: var(--darker);
+    padding: 47px 0;
+}
+
+.logo {
+    height: 30px;
+}
+
+.logos {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brand__wrapper {
+    min-width: 225px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1440px) {
+    .brand__wrapper {
+        min-width: 170px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .logos {
+        padding-top: 10px;
+    }
+    .brand__wrapper {
+        min-width: 300px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand__wrapper {
+        min-width: 250px;
+        padding: 30px;
+    }
+}

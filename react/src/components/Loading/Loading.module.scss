@@ -1,0 +1,15 @@
+.loading {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 100px;
+    z-index: 2;
+
+    &-img {
+        width: 100px;
+        height: 100px;
+    }
+}

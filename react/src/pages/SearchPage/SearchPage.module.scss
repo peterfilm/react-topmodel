@@ -1,0 +1,12 @@
+.searchPage {
+    min-height: calc(100vh - 520px);
+    background-color: var(--secondary);
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    
+}

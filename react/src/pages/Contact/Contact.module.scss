@@ -1,0 +1,43 @@
+.wrapper {
+    min-height: calc(100vh - 520px);
+    background-color: var(--secondary);
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.models {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.pContact {
+    width: 400px;
+    padding: 20px;
+}
+
+.title {
+    padding: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .pContact {
+        width: 100%;
+    }
+}
