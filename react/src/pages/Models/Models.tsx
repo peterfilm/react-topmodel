@@ -12,7 +12,6 @@ import { IModelCard } from "../../components/ModelCard/ModelCard.interface";
 const Models = () => {
 
     const [models, setModels] = useState<IModelCard[] | null | []>([])
-    const [count, setCount] = useState(0)
     const [nextPage, setNextPage] = useState<string | null>(null)
     const [previousPage, setPreviousPage] = useState<string | null>(null)
     const [pagesCount, setPagesCount] = useState(0)
@@ -23,7 +22,6 @@ const Models = () => {
         const response = await axios.get(
             `${PREFIX}/models/${location.search ? location.search : ''}`);
         const data = await response.data;
-        setCount(data.count)
         setNextPage(data.next)
         setPreviousPage(data.previous)
         setModels(data.results)

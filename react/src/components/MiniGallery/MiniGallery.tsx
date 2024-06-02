@@ -10,7 +10,7 @@ const MiniGallery = () => {
     const portfolio = useSelector((state:RootState) => state.portfolio)
 
     const [containerWidth, setContainerWidth] = useState(500)
-    const [photoWidth, setPhotoWidth] = useState(80)
+    const photoWidth = 80
     const adjPhotoWidth = photoWidth + 20
     const totalContentWidth = portfolio.photographs.length * adjPhotoWidth;
     const excessWidth = totalContentWidth - containerWidth;

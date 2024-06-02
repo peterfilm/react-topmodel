@@ -53,7 +53,7 @@ const router = createBrowserRouter([
       },
     ]
   },
-])
+], {basename: '/react-topmodel'})
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   // <React.StrictMode>
