@@ -64,7 +64,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'modelsite.urls'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',]
+    'http://localhost:5173', 'https://peterfilm.github.io']
 
 TEMPLATES = [
     {
