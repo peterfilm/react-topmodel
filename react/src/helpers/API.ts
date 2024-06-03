@@ -1,1 +1,1 @@
-export const PREFIX = 'https://react-topmodel.onrender.com'
+export const PREFIX = 'https://react-topmodel.onrender.com/api/v1'

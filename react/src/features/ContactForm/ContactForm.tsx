@@ -8,6 +8,7 @@ import TextArea from "../../components/TextArea/TextArea";
 import Input from "../../components/Input/Input";
 import { PREFIX } from "../../helpers/API";
 import { Fade } from "react-awesome-reveal";
+import well from '../../assets/well_sent.png'
 
 interface IForm {
   nameField: string | null,
@@ -171,7 +172,7 @@ export default ContactForm
 const WellSent = () => {
   return (
     <Fade><div className={cn(styles['wrapperSent'])}>
-      <img className={cn(styles['sentImg'])} src="/well_sent.png" alt="Well Sent" />
+      <img className={cn(styles['sentImg'])} src={well} alt="Well Sent" />
       <h2 className={cn(styles['sentText'])}>Thanks for sending!</h2>
       <p className={cn(styles['sentMessage'])}>Your message has been sent successfully</p>
     </div></Fade>
