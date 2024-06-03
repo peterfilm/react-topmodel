@@ -144,7 +144,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 MEDIA_ROOT = BASE_DIR / 'media'
-MEDIA_URL = '/media/'  # добавляет префикс к графическим файлам
+MEDIA_URL = 'https://raw.githubusercontent.com/peterfilm/react-topmodel/branch/media/'
+# MEDIA_URL = '/media/'  # добавляет префикс к графическим файлам
 
 
 STATIC_URL = '/static/'
@@ -181,4 +182,4 @@ if os.environ.get('RENDER'):
     STATIC_ROOT = BASE_DIR / 'staticfiles'
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
     MEDIA_ROOT = BASE_DIR / 'media'
-    MEDIA_URL = '/media/' 
+    MEDIA_URL = 'https://raw.githubusercontent.com/peterfilm/react-topmodel/branch/media/' 
