@@ -179,3 +179,5 @@ if os.environ.get('RENDER'):
     ALLOWED_HOSTS = ['react-topmodel.onrender.com']
     STATIC_ROOT = BASE_DIR / 'staticfiles'
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    MEDIA_ROOT = BASE_DIR / 'media'
+    MEDIA_URL = '/media/' 
