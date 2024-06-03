@@ -94,7 +94,10 @@ WSGI_APPLICATION = 'modelsite.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
@@ -166,9 +169,13 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 
 if os.environ.get('RENDER'):
-    DATABASES['default'] = dj_database_url.config(conn_max_age=600)
-    # Безопасные параметры для продакшн
+    # Use SQLite in Render environment
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+    # Production settings
     DEBUG = False
     ALLOWED_HOSTS = ['react-topmodel.onrender.com']
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_ROOT = BASE_DIR / 'staticfiles'
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
