@@ -6,6 +6,8 @@
     width: 30px;
     height: 30px;
     margin: 5px;
+    padding: 0px;
+    line-height: 0px;
 }
 
 .link {
@@ -14,8 +16,16 @@
     margin: 5px;
     border: 2px solid var(--main);
     background-color: var(--secondary);
+    text-align: center;
     cursor: pointer;
     color: var(--darker);
+    text-decoration: none;
+    padding: 0px;
+    line-height: 0px;
+    
+    a {
+        text-decoration: none;
+    }
 }
 
 .active {
@@ -27,4 +37,6 @@
     background-color: var(--main);
     font-weight: 800;
     color: var(--secondary);
+    padding: 0px;
+    line-height: 0px;
 }

@@ -23,6 +23,6 @@
 
 @media (max-width: 425px) {
     .card_table {
-        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-template-columns: 1fr;
     }
 }

@@ -2,15 +2,24 @@ import cn from "classnames"
 import styles from "./Brands.module.scss";
 import Title from "../Title/Title";
 import { Zoom } from "react-awesome-reveal";
+import armani from '../../../public/logos/armani.png'
+import disney from '../../../public/logos/disney.png'
+import gucci from '../../../public/logos/gucci.png'
+import mh from '../../../public/logos/mens.png'
+import obey from '../../../public/logos/obey.png'
+import vogue from '../../../public/logos/vogue.png'
+
+
+
 
 const Brands = () => {
     const data = [
-        {name: 'Armani', img: 'logos/armani.png'},
-        {name: 'Disney', img: 'logos/disney.png'},
-        {name: 'Gucci', img: 'logos/gucci.png'},
-        {name: 'Mens Health', img: 'logos/mens.png'},
-        {name: 'Obey', img: 'logos/obey.png'},
-        {name: 'Vogue', img: 'logos/vogue.png'}
+        {name: 'Armani', img: armani},
+        {name: 'Disney', img: disney},
+        {name: 'Gucci', img: gucci},
+        {name: 'Mens Health', img: mh},
+        {name: 'Obey', img: obey},
+        {name: 'Vogue', img: vogue}
     ]
 
     return (

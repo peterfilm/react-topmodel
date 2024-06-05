@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import mainImg from '../../assets/main_photo.jpg'
 import { Link } from "react-router-dom";
 
+
 const HeaderCover = () => {
 
     return (
